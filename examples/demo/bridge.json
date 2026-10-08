@@ -1,0 +1,17 @@
+{
+  "name": "demo-bridge",
+  "display_name": "示范桥（假世界）",
+  "version": "0.1.0",
+  "world": "demo",
+  "api_version": "1",
+  "entry": "yueban_bridge.adapters.demo:DemoWorld",
+  "capabilities": ["say", "emote", "read", "act"],
+  "needs": ["读口", "对话", "上报口", "outbox"],
+  "platform": "http://127.0.0.1:5000",
+  "character_id": "",
+  "source": "demo",
+  "events_path": "/api/bridge/events",
+  "poll_seconds": 5.0,
+  "outbox_seconds": 5.0,
+  "state_seconds": 10.0
+}

@@ -1,0 +1,12 @@
+# ★ 缓存与产物（★ 队列是本地的、★ 不该进仓 ✗）
+*.queue.db
+*.queue.db-wal
+*.queue.db-shm
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+# ★ 真清单里会有**你的令牌** ⇒ ⛔ 不进仓 ✗
+bridge.json
+!examples/demo/bridge.json
